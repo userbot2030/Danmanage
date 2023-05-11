@@ -45,7 +45,7 @@ from RitoRobot import (
 from RitoRobot.modules import ALL_MODULES
 from RitoRobot.modules.helper_funcs.chat_status import is_user_admin
 from RitoRobot.modules.helper_funcs.misc import paginate_modules
-from MsRobot.JasaBot import text_jasabot
+
 
 
 
@@ -507,12 +507,54 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "jasabot":
         query.message.edit_text(
-            text=f"{text_jasabot}",
+            text="""𝙅𝘼𝙎𝘼 𝘿𝙀𝙋𝙇𝙊𝙔 𝘽𝙊𝙏 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈
+
+ 🤖 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙂𝘾𝘼𝙎𝙏
+      ├ ʀᴘ. 30.000  [ ᴘᴇʀʙᴜʟᴀɴ ]
+      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+
+ 🤖 𝘽𝙊𝙏 𝙈𝙐𝙎𝙄𝙆
+      ├ ʀᴘ. 30.000 [ ᴀᴡᴀʟᴀɴ ᴘᴀsᴀɴɢ ]
+      ├ ʀᴘ. 20.000 [ ʟᴀɴɢɢᴀɴᴀɴ ]
+      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+
+ 🤖 𝘽𝙊𝙏 𝙈𝙐𝙎𝙄𝙆 & 𝙈𝘼𝙉𝘼𝙂𝙀
+      ├ ʀᴘ. 75.000 [ ᴀᴡᴀʟᴀɴ ᴘᴀsᴀɴɢ ]
+      ├ ʀᴘ. 50.000 [ ʟᴀɴɢɢᴀɴᴀɴ ]
+      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+
+ 🤖 𝘽𝙊𝙏 𝙈𝘼𝙉𝘼𝙂𝙀
+      ├ ʀᴘ. 30.000 [ ᴘᴇʀʙᴜʟᴀɴ ]
+      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+
+  🤖 𝘽𝙊𝙏 𝙁𝙄𝙇𝙀 𝙎𝙃𝘼𝙍𝙄𝙉𝙂
+      ├ ʀᴘ. 30.000 [ ᴘᴇʀʙᴜʟᴀɴ ]
+      ├ ʙɪꜱᴀ ʀᴇQ ᴍᴀx 6 ʙᴜᴛᴛᴏɴ
+      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ
+      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ
+      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ
+
+   ᴄᴀᴛᴀᴛᴀɴ:
+      1. ᴀᴘᴀʙɪʟᴀ ʙᴏᴛ ʏᴀɴɢ ᴀɴᴅᴀ ɪɴɢɪɴᴋᴀɴ
+          ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅɪᴀᴛᴀs, sɪʟᴀᴋᴀɴ 
+          ᴘᴍ 🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍
+      2. ʙɪꜱᴀ ᴛʀɪᴀʟ ꜱᴀᴛᴜ ᴊᴀᴍ ᴊɪᴋᴀ ʀᴀɢᴜ
+          ᴅᴀɴ ᴍᴇᴍᴘᴇʀᴛɪᴍʙᴀɴɢᴋᴀɴ ʙᴏᴛ. 
+      3. ᴊɪᴋᴀ ɪɴɢɪɴ ʙᴇʟɪ ʜᴜʙᴜɴɢɪ ᴀᴅᴍɪɴ
+          🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍 ᴅɪʙᴀᴡᴀʜ ɪɴɪ.""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN")
                  ]
                 ]
              ), 
