@@ -45,6 +45,8 @@ from RitoRobot import (
 from RitoRobot.modules import ALL_MODULES
 from RitoRobot.modules.helper_funcs.chat_status import is_user_admin
 from RitoRobot.modules.helper_funcs.misc import paginate_modules
+from MsRobot.JasaBot import text_jasabot
+
 
 
 def get_readable_time(seconds: int) -> str:
@@ -87,7 +89,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="JASA BOT 🤖", callback_data="jasabot"),
+        InlineKeyboardButton(text="ᴊᴀꜱᴀ ʙᴏᴛ 🤖", callback_data="jasabot"),
     ], 
     [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
@@ -104,7 +106,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ 🔥", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
         ),
      ],
 ]
@@ -505,7 +507,16 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "jasabot":
         query.message.edit_text(
-            text="
+            text=f"{text_jasabot}",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                 ]
+                ]
+             ), 
+          ) 
 
 
 @run_async
