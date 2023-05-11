@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ {} !*
+*ʜᴇʟʟᴏ {} !* [🔥](https://telegra.ph/file/9f93ca1114a1e01b63239.jpg)
 ━━━━━━━━━━━━━━━━━━━━━━━━
 {} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -81,27 +81,30 @@ PM_START_TEXT = """
 ➻ ᴜsᴇʀs ᐉ `{}`
 ➻ ɢʀᴏᴜᴘꜱ ᐉ `{}`
 ━━━━━━━━━━━━━━━━━━━━━━━━
-᳁ ᴛᴇᴋᴀɴ /help ᴀᴛᴀᴜ /mhelp ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
+᳁ ᴛᴇᴋᴀɴ /help ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"
+        InlineKeyboardButton(text="JASA BOT ro"
+    ], 
+    [
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
         ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
         InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="Rito_support"
        ),
         InlineKeyboardButton(
-            text="ᴅᴏɴᴀsɪ ❤️", url="https://link.dana.id/qr/68girf2p"
+            text="ᴅᴏɴᴀsɪ 🙏", url="https://t.me/stories_zulll/34"
        ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
         ),
      ],
 ]
@@ -491,8 +494,8 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="ϙʀɪs", url=f"{DONATE_LINK}"),
+                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/{OWNER_USERNAME}"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="Rito_back"),
