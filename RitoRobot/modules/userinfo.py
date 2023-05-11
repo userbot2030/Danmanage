@@ -319,10 +319,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ᴅᴏɴᴀsɪ ​❤️", url="https://link.dana.id/qr/68girf2p)",
+                                "ᴅᴏɴᴀsɪ ​❤️", url="https://link.dana.id/qr/68girf2p"),
                             InlineKeyboardButton(
                                 "ᴏᴡɴᴇʀ", url="https://t.me/kiritonibot"),
-                        ],
+                        ]
                     ]
                 ),
                 parse_mode=ParseMode.HTML,
