@@ -87,7 +87,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="JASA BOT ro"
+        InlineKeyboardButton(text="JASA BOT 🤖", callback_data="jasabot"),
     ], 
     [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
@@ -503,6 +503,9 @@ def Rito_about_callback(update, context):
                 ]
             ),
         )
+    elif query.data == "jasabot":
+        query.message.edit_text(
+            text="
 
 
 @run_async
