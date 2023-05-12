@@ -89,7 +89,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴊᴀꜱᴀ ʙᴏᴛ 🤖", callback_data="jasa_bot"),
+        InlineKeyboardButton(text="ᴊᴀꜱᴀ ʙᴏᴛ 🤖", callback_data="Rito_jasa"),
     ], 
     [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
@@ -505,7 +505,7 @@ def Rito_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "jasa_bot":
+    elif query.data == "Rito_jasa":
         query.message.edit_text(
             text="𝙅𝘼𝙎𝘼 𝘿𝙀𝙋𝙇𝙊𝙔 𝘽𝙊𝙏 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈"
                  "\n\n 🤖 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙂𝘾𝘼𝙎𝙏"
