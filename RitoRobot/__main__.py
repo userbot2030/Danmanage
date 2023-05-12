@@ -610,6 +610,12 @@ def Rito_about_callback(update, context):
                 ]
             ),
          )
+    elif query.data == "Rito_ml":
+        query.message.edit_text(
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
 
 
 @run_async
