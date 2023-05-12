@@ -575,6 +575,11 @@ def Rito_about_callback(update, context):
     elif query.data == "Rito_store":
         query.message.edit_text(
             text=f"{text_dzstore}",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                     InlineKeyboardButton(text="ɢᴀᴍᴇꜱ🕹", callback_data="Rito_games"), 
 
 
 @run_async
