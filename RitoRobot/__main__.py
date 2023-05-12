@@ -594,6 +594,7 @@ def Rito_about_callback(update, context):
         ) 
     elif query.data == "Rito_games":
         query.message.edit_text(
+            text=f"{text_games}",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -612,10 +613,27 @@ def Rito_about_callback(update, context):
          )
     elif query.data == "Rito_ml":
         query.message.edit_text(
+            text=f"{text_ml}",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
+                     InlineKeyboardButton(text="", callback_data=""),
+                 ],
+                 [
+                     InlineKeyboardButton(text="", callback_data=""),
+                 ]
+                ]
+             ),
+         )
+    elif query.data == "Rito_payment":
+        query.message.edit_text(
+            text=f"{text_payment",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+
+
 
 
 @run_async
