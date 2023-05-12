@@ -45,7 +45,8 @@ from RitoRobot import (
 from RitoRobot.modules import ALL_MODULES
 from RitoRobot.modules.helper_funcs.chat_status import is_user_admin
 from RitoRobot.modules.helper_funcs.misc import paginate_modules
-
+from MsRobot.dzstore import text_dzstore, text_games, text_ml
+from MsRobot.payment import text_payment
 
 
 
