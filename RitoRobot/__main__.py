@@ -618,10 +618,10 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="", callback_data="Rito_payment"),
+                     InlineKeyboardButton(text="ᴘᴀʏᴍᴇɴᴛ💸", callback_data="Rito_payment"),
                  ],
                  [
-                     InlineKeyboardButton(text="", callback_data=""),
+                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
                  ]
                 ]
              ),
@@ -632,8 +632,15 @@ def Rito_about_callback(update, context):
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
-
-
+                 [
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
+                 ]
+                ]
+             ),
+          )
 
 
 @run_async
