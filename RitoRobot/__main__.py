@@ -618,7 +618,7 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="", callback_data=""),
+                     InlineKeyboardButton(text="", callback_data="Rito_payment"),
                  ],
                  [
                      InlineKeyboardButton(text="", callback_data=""),
