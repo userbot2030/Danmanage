@@ -628,7 +628,7 @@ def Rito_about_callback(update, context):
          )
     elif query.data == "Rito_payment":
         query.message.edit_text(
-            text=f"{text_payment",
+            text=f"{text_payment}",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
