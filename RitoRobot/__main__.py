@@ -579,7 +579,11 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="ɢᴀᴍᴇꜱ🕹", callback_data="Rito_games"), 
+                     InlineKeyboardButton(text="ɢᴀᴍᴇꜱ🕹", callback_data="Rito_games"),
+                     InlineKeyboardButton(text="", 
+                 ],
+                 [
+                     InlineKeyboardButton
 
 
 @run_async
