@@ -101,7 +101,7 @@ buttons = [
         InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="Rito_support"
        ),
         InlineKeyboardButton(
-            text="ᴅᴏɴᴀsɪ 🙏", url="https://t.me/stories_zulll/34"
+            text="ᴅᴏɴᴀsɪ 🙏", callback_data="Rito_donasi"
        ),
     ],
     [
@@ -556,6 +556,12 @@ def Rito_about_callback(update, context):
                 ]
              ), 
           ) 
+      elif query.data == "Rito_donasi":
+        query.message.edit_text(
+            text="ᴅᴏɴᴀꜱɪ ᴅᴇɴɢᴀɴ ꜱᴄᴀɴ Qʀɪꜱ ᴅɪᴀᴛᴀꜱ [🔥](https://telegra.ph/file/bdf23d4e78c8337249c26.png)"
+            "\n\n𝙏𝙚𝙧𝙞𝙢𝙖𝙠𝙖𝙨𝙞𝙝 𝙮𝙖𝙣𝙜 𝙨𝙪𝙙𝙖𝙝 𝙗𝙚𝙧𝙙𝙤𝙣𝙖𝙨𝙞🙏",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⩹", callback_data="Rito_back")]]),)
 
 
 @run_async
