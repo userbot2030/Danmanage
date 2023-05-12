@@ -576,14 +576,30 @@ def Rito_about_callback(update, context):
         query.message.edit_text(
             text=f"{text_dzstore}",
             parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                      InlineKeyboardButton(text="ɢᴀᴍᴇꜱ🕹", callback_data="Rito_games"),
-                     InlineKeyboardButton(text="", 
+                     InlineKeyboardButton(text="ᴛᴇʟᴇɢʀᴀᴍ✉", callback_data="Rito_tele"),
                  ],
                  [
-                     InlineKeyboardButton
+                     InlineKeyboardButton(text="lain lainnya", callback_data="Rito_lain"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
+                 ]
+                ]
+            ),
+        ) 
+    elif query.data == "Rito_games":
+        query.message.edit_text(
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                     InlineKeyboardButton(text="ᴍʟ", callback_data="Rito_ml"),
+                     InlineKeyboardButton(text="", 
 
 
 @run_async
