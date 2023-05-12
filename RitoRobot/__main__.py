@@ -549,6 +549,8 @@ def Rito_about_callback(update, context):
                 [
                  [
                      InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                 ],
+                 [
                      InlineKeyboardButton(text="🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT/426"),
                  ],
                  [
@@ -563,7 +565,7 @@ def Rito_about_callback(update, context):
             text="ᴅᴏɴᴀꜱɪ ᴅᴇɴɢᴀɴ ꜱᴄᴀɴ Qʀɪꜱ ᴅɪʙᴀᴡᴀʜ [🔥](https://telegra.ph/file/bdf23d4e78c8337249c26.png)"
             "\n\n𝙏𝙚𝙧𝙞𝙢𝙖𝙠𝙖𝙨𝙞𝙝 𝙮𝙖𝙣𝙜 𝙨𝙪𝙙𝙖𝙝 𝙗𝙚𝙧𝙙𝙤𝙣𝙖𝙨𝙞🙏",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back")]]),)
 
 
