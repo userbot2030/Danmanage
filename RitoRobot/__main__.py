@@ -98,6 +98,9 @@ buttons = [
         ),
     ],
     [
+        InlineKeyboardButton(text="🄳🅉 𝗦†♢RΣ", callback_data="Rito_store"),
+    ], 
+    [
         InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="Rito_support"
        ),
         InlineKeyboardButton(
