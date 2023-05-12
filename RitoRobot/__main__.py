@@ -549,6 +549,7 @@ def Rito_about_callback(update, context):
                 [
                  [
                      InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                     InlineKeyboardButton(text="🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT/426"),
                  ],
                  [
                      InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
