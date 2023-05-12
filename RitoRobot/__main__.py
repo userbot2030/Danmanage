@@ -453,7 +453,7 @@ def Rito_about_callback(update, context):
                     InlineKeyboardButton(text="✮ ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="Rito_back"),
+                    InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
                  
                  ]
                 ]
@@ -599,7 +599,17 @@ def Rito_about_callback(update, context):
                 [
                  [
                      InlineKeyboardButton(text="ᴍʟ", callback_data="Rito_ml"),
-                     InlineKeyboardButton(text="", 
+                     InlineKeyboardButton(text="ꜰʀᴇᴇ ꜰɪʀᴇ", callback_data="Rito_ff"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="ᴅᴏᴍɪɴᴏ", callback_data="Rito_domino"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_store"),
+                 ]
+                ]
+            ),
+         )
 
 
 @run_async
