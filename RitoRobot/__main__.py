@@ -45,7 +45,7 @@ from RitoRobot import (
 from RitoRobot.modules import ALL_MODULES
 from RitoRobot.modules.helper_funcs.chat_status import is_user_admin
 from RitoRobot.modules.helper_funcs.misc import paginate_modules
-from MsRobot.dzstore import text_dzstore, text_games, text_ml
+from MsRobot.dzstore import text_dzstore, text_games, text_ml, text_ff, text_domino
 from MsRobot.payment import text_payment
 
 
@@ -626,6 +626,15 @@ def Rito_about_callback(update, context):
                 ]
              ),
          )
+    elif query.data == "Rito_ff":
+        query.message.edit_text(
+            text=f"{text_ff}",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=False,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                     InlineKeyboardButton=(text=""
     elif query.data == "Rito_payment":
         query.message.edit_text(
             text=f"{text_payment}",
