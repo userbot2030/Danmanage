@@ -45,7 +45,7 @@ from RitoRobot import (
 from RitoRobot.modules import ALL_MODULES
 from RitoRobot.modules.helper_funcs.chat_status import is_user_admin
 from RitoRobot.modules.helper_funcs.misc import paginate_modules
-from MsRobot.dzstore import text_dzstore, text_games, text_ml, text_ff, text_domino
+from MsRobot.dzstore import text_dzstore, text_games, text_ml, text_ff, text_domino, text_tele, text_lainnya
 from MsRobot.payment import text_payment
 
 
@@ -584,7 +584,7 @@ def Rito_about_callback(update, context):
                      InlineKeyboardButton(text="ᴛᴇʟᴇɢʀᴀᴍ✉", callback_data="Rito_tele"),
                  ],
                  [
-                     InlineKeyboardButton(text="lain lainnya", callback_data="Rito_lain"),
+                     InlineKeyboardButton(text="lain lainnya", callback_data="Rito_lainnya"),
                  ],
                  [
                      InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
@@ -653,6 +653,36 @@ def Rito_about_callback(update, context):
                  ],
                  [
                      InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
+                 ]
+                ]
+             ),
+          )
+    elif query.data == "Rito_tele":
+        query.message.edit_text(
+            text=f"{text_tele}",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_store"),
+                 ]
+                ]
+             ),
+         )
+    elif query.data == "Rito_lainnya":
+        query.message.edit_text(
+            text=f"{text_lainnya}",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_store"),
                  ]
                 ]
              ),
