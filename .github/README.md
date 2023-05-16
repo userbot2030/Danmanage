@@ -23,7 +23,7 @@
 - <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
 </h3></summary>
 
-- Get your [Necessary Variables](https://github.com/DjeFaris/RitoRobot/blob/master/RitoRobot/config.py)
+- Get your [Necessary Variables](https://github.com/MS-DZULQURNAIM/RitoRobot/blob/main/RitoRobot/config.py)
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install required packages by :
@@ -31,7 +31,7 @@
 - Install pip by :
 `sudo pip3 install -U pip`
 - Clone the repository by :
-`git clone https://github.com/Dje_Faris/RitoRobot && cd RitoRobot`
+`git clone https://github.com/MS-DZULQURNAIN/RitoRobot && cd RitoRobot`
 - Install/Upgrade setuptools by :
 `pip3 install --upgrade pip setuptools`
 - Install requirements by :
