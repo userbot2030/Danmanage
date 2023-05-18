@@ -50,8 +50,8 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     DB_URI = os.environ.get("DATABASE_URL")
     ARQ_API = os.environ.get("ARQ_API", None)
-    ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://thearq.tech/")
-    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "GVUGBU-EKQGAV-RHAKQP-VDZJIM-ARQ")
+    ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.dev")
+    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
     DONATE_LINK = os.environ.get("DONATE_LINK", None)
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
@@ -61,7 +61,7 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
-        "START_IMG", "https://telegra.ph/file/04553bb89d89d282528e8.jpg"
+        "START_IMG", None
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "Ritosupport")
