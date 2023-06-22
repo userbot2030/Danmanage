@@ -36,26 +36,27 @@ def send_rules(update, chat_id, from_pm=False):
     text = f"Aturan untuk *{escape_markdown(chat.title)}* adalah:\n\n{rules}"
 
     if from_pm and rules:
+        boif from_pm and rules:
         bot.send_message(
-            dest_chat,
+            user.id,
             text,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
     elif from_pm:
         bot.send_message(
-            dest_chat,
-            "The group admins haven't set any rules for this chat yet. "
-            "This probably doesn't mean it's lawless though...!",
+            user.id,
+            "Admin grup belum menetapkan aturan apa pun untuk obrolan ini. "
+            "Ini mungkin tidak berarti itu melanggar hukum...!",
         )
     elif rules and reply_msg:
         reply_msg.reply_text(
-            "ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʀᴜʟᴇs.",
+            "Silakan klik tombol di bawah ini untuk melihat aturannya.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʀᴜʟᴇs •",
+                            text="ᴀᴛᴜʀᴀɴ ɢʀᴏᴜᴘ",
                             url=f"t.me/{bot.username}?start={chat_id}",
                         ),
                     ],
@@ -64,12 +65,12 @@ def send_rules(update, chat_id, from_pm=False):
         )
     elif rules:
         update.effective_message.reply_text(
-            "ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʀᴜʟᴇs.",
+            "Silakan klik tombol di bawah ini untuk melihat aturannya.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʀᴜʟᴇs •",
+                            text="ᴀᴛᴜʀᴀɴ ɢʀᴏᴜᴘ",
                             url=f"t.me/{bot.username}?start={chat_id}",
                         ),
                     ],
@@ -78,8 +79,8 @@ def send_rules(update, chat_id, from_pm=False):
         )
     else:
         update.effective_message.reply_text(
-            "The group admins haven't set any rules for this chat yet. "
-            "This probably doesn't mean it's lawless though...!",
+            "Admin grup belum menetapkan aturan apa pun untuk obrolan ini. "
+            "Ini mungkin tidak berarti itu melanggar hukum...!",
         )
 
 
