@@ -1,6 +1,6 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler
+from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.utils.helpers import escape_markdown
 
 import RitoRobot.modules.sql.rules_sql as sql
@@ -11,13 +11,8 @@ from RitoRobot.modules.helper_funcs.string_handling import markdown_parser
 
 @connection_status
 def get_rules(update: Update, context: CallbackContext):
-    args = context.args
-    here = args and args[0] == "here"
     chat_id = update.effective_chat.id
-    # connection_status sets update.effective_chat
-    real_chat = update.effective_message.chat
-    dest_chat = real_chat.id if here else None
-    send_rules(update, chat_id, real_chat.type == real_chat.PRIVATE or here, dest_chat)
+    send_rules(update, chat_id)
 
 
 # Do not async - not from a handler
