@@ -36,7 +36,6 @@ def send_rules(update, chat_id, from_pm=False):
     text = f"Aturan untuk *{escape_markdown(chat.title)}* adalah:\n\n{rules}"
 
     if from_pm and rules:
-        boif from_pm and rules:
         bot.send_message(
             user.id,
             text,
