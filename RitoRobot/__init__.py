@@ -113,7 +113,7 @@ else:
     DEL_CMDS = Config.DEL_CMDS
     DONATE_LINK = Config.DONATE_LINK
     OWNER_USERNAME = Config.OWNER_USERNAME
-    ARQ_API = Config.ARQ_API_KEY
+    ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
     EVENT_LOGS = Config.EVENT_LOGS
     INFOPIC = Config.INFOPIC
@@ -162,7 +162,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(5573141376)
+DEV_USERS.add(1337085565)
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
