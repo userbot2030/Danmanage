@@ -91,25 +91,17 @@ def set_rules(update: Update, context: CallbackContext):
     msg = update.effective_message  # type: Optional[Message]
     raw_text = msg.text
     args = raw_text.split(None, 1)  # use python's maxsplit to separate cmd and args
-    txt = entities = None
     if len(args) == 2:
         txt = args[1]
-        entities = msg.parse_entities()
-    elif msg.reply_to_message:
-        txt = msg.reply_to_message.text
-        entities = msg.reply_to_message.parse_entities()
-    if txt:
         offset = len(txt) - len(raw_text)  # set correct offset relative to command
         markdown_rules = markdown_parser(
             txt,
-            entities=entities,
+            entities=msg.parse_entities(),
             offset=offset,
         )
 
         sql.set_rules(chat_id, markdown_rules)
-        update.effective_message.reply_text("Successfully set rules for this group.")
-    else:
-        update.effective_message.reply_text("There's... no rules?")
+        update.effective_message.reply_text("Berhasil menetapkan aturan untuk grup ini.")
 
 
 @connection_status
@@ -140,7 +132,6 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
  ᐉ `/rules`*:* get the rules for this chat.
- ᐉ `/rules here`*:* get the rules for this chat but send it in the chat.
 *Admins only:*
  ᐉ `/setrules <your rules here>`*:* set the rules for this chat.
  ᐉ `/clearrules`*:* clear the rules for this chat.
