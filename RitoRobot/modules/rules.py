@@ -16,23 +16,21 @@ def get_rules(update: Update, context: CallbackContext):
 
 
 # Do not async - not from a handler
-def send_rules(update, chat_id, from_pm=False, dest_chat=None):
+def send_rules(update, chat_id, from_pm=False):
     bot = dispatcher.bot
     user = update.effective_user  # type: Optional[User]
     reply_msg = update.message.reply_to_message
-    dest_chat = dest_chat or user.id
     try:
         chat = bot.get_chat(chat_id)
     except BadRequest as excp:
         if excp.message == "Chat not found" and from_pm:
             bot.send_message(
-                dest_chat,
-                "The rules shortcut for this chat hasn't been set properly! Ask admins to "
-                "fix this.\nMaybe they forgot the hyphen in ID",
+                user.id,
+                "Pintasan aturan untuk obrolan ini belum disetel dengan benar! Minta admin untuk "
+                "Perbaiki ini.\Mungkin mereka lupa tanda hubung di ID",
             )
             return
-        else:
-            raise
+        raise
 
     rules = sql.get_rules(chat_id)
     text = f"The rules for *{escape_markdown(chat.title)}* are:\n\n{rules}"
