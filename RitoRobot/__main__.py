@@ -371,7 +371,7 @@ def Rito_about_callback(update, context):
                     InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="Rito_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="Rito_back"),
+                    InlineKeyboardButton(text="«", callback_data="Rito_back"),
                  ]
                 ]
             ),
@@ -535,7 +535,26 @@ def Rito_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back")]]),)
-        
+    elif query.data == "Rito_dasar":
+        query.message.edit_text(
+            text=DASAR,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="Rito_support"),]]),)
+    elif query.data == "Rito_lanjut":
+        query.message.edit_text(
+            text=LANJUT,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="Rito_support"),]]),)
+    elif query.data == "Rito_ahli":
+        query.message.edit_text(
+            text=AHLI,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="Rito_support"),]]),)
+    elif query.data == "Rito_pro":
+        query.message.edit_text(
+            text=PRO,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="Rito_support"),]]),)
 
 
 @run_async
@@ -562,7 +581,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="source_back")
+                    InlineKeyboardButton(text="«", callback_data="source_back")
                  ]
                 ]
             ),
@@ -644,7 +663,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⩹", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="«", callback_data="help_back")]]
             ),
         )
 
@@ -717,7 +736,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="⩹",
+                                text="«",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
