@@ -96,11 +96,11 @@ buttons = [
         InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url="t.me/DzMusicRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="kynan_support"),
-        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="kynan_"),
+        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="Rito_support"),
+        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Rito_"),
     ],
     [
-        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data="kynan_jasa"),
+        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data="Rito_jasa"),
     ],
     [
         InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/MSPR0JECT"),
@@ -368,7 +368,7 @@ def Rito_about_callback(update, context):
                     InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="Rito_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="Rito_support"),
+                    InlineKeyboardButton(text="⩹", callback_data="Rito_back"),
                  ]
                 ]
             ),
@@ -503,43 +503,7 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "Rito_jasa":
         query.message.edit_text(
-            text="𝙅𝘼𝙎𝘼 𝘿𝙀𝙋𝙇𝙊𝙔 𝘽𝙊𝙏 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈"
-                 "\n\n 🤖 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙂𝘾𝘼𝙎𝙏"
-                 "\n      ├ ʀᴘ. 30.000  [ ᴘᴇʀʙᴜʟᴀɴ ]"
-                 "\n      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ"
-                 "\n      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ"
-                 "\n      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ"
-                 "\n\n 🤖 𝘽𝙊𝙏 𝙈𝙐𝙎𝙄𝙆"
-                 "\n      ├ ʀᴘ. 30.000 [ ᴀᴡᴀʟᴀɴ ᴘᴀsᴀɴɢ ]"
-                 "\n      ├ ʀᴘ. 20.000 [ ʟᴀɴɢɢᴀɴᴀɴ ]"
-                 "\n      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ"
-                 "\n      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ"
-                 "\n      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ"
-                 "\n\n 🤖 𝘽𝙊𝙏 𝙈𝙐𝙎𝙄𝙆 & 𝙈𝘼𝙉𝘼𝙂𝙀"
-                 "\n      ├ ʀᴘ. 75.000 [ ᴀᴡᴀʟᴀɴ ᴘᴀsᴀɴɢ ]"
-                 "\n      ├ ʀᴘ. 50.000 [ ʟᴀɴɢɢᴀɴᴀɴ ]"
-                 "\n      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ"
-                 "\n      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ"
-                 "\n      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ"
-                 "\n\n 🤖 𝘽𝙊𝙏 𝙈𝘼𝙉𝘼𝙂𝙀"
-                 "\n      ├ ʀᴘ. 30.000 [ ᴘᴇʀʙᴜʟᴀɴ ]"
-                 "\n      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ"
-                 "\n      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ"
-                 "\n      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ"
-                 "\n\n 🤖 𝘽𝙊𝙏 𝙁𝙄𝙇𝙀 𝙎𝙃𝘼𝙍𝙄𝙉𝙂"
-                 "\n      ├ ʀᴘ. 30.000 [ ᴘᴇʀʙᴜʟᴀɴ ]"
-                 "\n      ├ ʙɪꜱᴀ ʀᴇQ ᴍᴀx 6 ʙᴜᴛᴛᴏɴ"
-                 "\n      ├ ᴅᴇᴘʟᴏʏ ᴅɪ ʜᴇʀᴏᴋᴜ"
-                 "\n      ├ ꜰᴜʟʟ ɢᴀʀᴀɴꜱɪ 1 ʙᴜʟᴀɴ"
-                 "\n      └ sɪsᴛᴇᴍ ᴛᴇʀɪᴍᴀ ᴊᴀᴅɪ"
-                 "\n\n   ᴄᴀᴛᴀᴛᴀɴ:"
-                 "\n      1. ᴀᴘᴀʙɪʟᴀ ʙᴏᴛ ʏᴀɴɢ ᴀɴᴅᴀ ɪɴɢɪɴᴋᴀɴ"
-                 "\n          ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅɪᴀᴛᴀs, sɪʟᴀᴋᴀɴ"
-                 "\n          ᴘᴍ 🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍"
-                 "\n      2. ʙɪꜱᴀ ᴛʀɪᴀʟ ꜱᴀᴛᴜ ᴊᴀᴍ ᴊɪᴋᴀ ʀᴀɢᴜ"
-                 "\n          ᴅᴀɴ ᴍᴇᴍᴘᴇʀᴛɪᴍʙᴀɴɢᴋᴀɴ ʙᴏᴛ."
-                 "\n      3. ᴊɪᴋᴀ ɪɴɢɪɴ ʙᴇʟɪ ʜᴜʙᴜɴɢɪ ᴀᴅᴍɪɴ"
-                 "\n          🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍 ᴅɪʙᴀᴡᴀʜ ɪɴɪ.",
+            text=
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
