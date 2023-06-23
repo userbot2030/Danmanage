@@ -93,31 +93,20 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴊᴀꜱᴀ ʙᴏᴛ 🤖", callback_data="Rito_jasa"),
-    ], 
-    [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
-        ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
-        ),
+        InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url="t.me/DzMusicRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🄳🅉 𝗦†♢RΣ", callback_data="Rito_store"),
-    ], 
-    [
-        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="Rito_support"
-       ),
-        InlineKeyboardButton(
-            text="ᴅᴏɴᴀsɪ 🙏", callback_data="Rito_donasi"
-       ),
+        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="kynan_support"),
+        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="kynan_"),
     ],
     [
-        InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ 🔥", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
-        ),
-     ],
+        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data="kynan_jasa"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/MSPR0JECT"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/envSample"),
+    ],
 ]
-
 HELP_STRINGS = """
 Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
 
