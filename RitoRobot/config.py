@@ -10,7 +10,7 @@ class Config(object):
     EVENT_LOGS = (-1001935424604)  # Event logs channel to note down important bot level events
 
     # Telegraph link of the image which will be shown at start command.
-    START_IMG = "https://telegra.ph/file/9f93ca1114a1e01b63239.jpg"
+    START_IMG = "https://telegra.ph/file/d3b40cbdcbd84bfca790d.jpg"
     
     DONATE_LINK = "https://t.me/stories_zulll/34"
 
