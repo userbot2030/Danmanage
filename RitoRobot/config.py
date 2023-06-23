@@ -16,7 +16,7 @@ class Config(object):
 
     SUPPORT_CHAT = "envSample"  # Your Telegram support group chat username where your users will go and bother you
 
-    TOKEN = ""  # Get bot token from @BotFather on Telegram
+    TOKEN = "6049689032:AAH_Nmx-icacIb5FEAolpLdyiUnZjH11SU4"  # Get bot token from @BotFather on Telegram
 
     TIME_API_KEY = "ZMOE8Q6BE25J7BEU"  # Get this value from https://timezonedb.com/api
 
@@ -44,7 +44,7 @@ class Config(object):
     LOAD = []
     NO_LOAD = []
     STRICT_GBAN = True
-    TEMP_DOWNLOAD_DIRECTORY = "./"
+    TEMP_DOWNLOAD_DIRECTORY = "./download/"
     WORKERS = 8
 
 
