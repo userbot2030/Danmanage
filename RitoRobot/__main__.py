@@ -108,6 +108,8 @@ buttons = [
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/envSample"),
     ],
 ]
+
+
 HELP_STRINGS = """
 Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
 
@@ -436,18 +438,23 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "Rito_support":
         query.message.edit_text(
-            text="*📝 Bantuan Perintah Saya*"
-            "\npilih tombol dibawah untuk melihat bantuan perintah.",
+            text="Selamat datang di menu panduan",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴍᴜsɪᴄ ♬", callback_data="Rito_"),
-                    InlineKeyboardButton(text="✮ ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
+                    InlineKeyboardButton(text="💁🏻‍♂Perintah Dasar", callback_data="Rito_dasar"),
+                    InlineKeyboardButton(text="Lanjutan🙋🏻‍♂", callback_data="Rito_lanjut"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
-                 
+                    InlineKeyboardButton(text="🕵🏻Ahli", callback_data="Rito_ahli"),
+                    InlineKeyboardButton(text="Panduan Pro💆🏻‍♂", callback_data="Rito_pro"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="➕ Panduan Lengkap ➕", url="http://t.me/DzMusicRobot?start=help"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🔙 Kembali", callback_data="Rito_back"),
                  ]
                 ]
             ),
@@ -504,8 +511,8 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "Rito_jasa":
         query.message.edit_text(
-            text=
-            parse_mode=ParseMode.HTML,
+            text=JASA,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -529,137 +536,6 @@ def Rito_about_callback(update, context):
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back")]]),)
         
-    elif query.data == "Rito_store":
-        query.message.edit_text(
-            text=f"{text_dzstore}",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="ɢᴀᴍᴇꜱ🕹", callback_data="Rito_games"),
-                     InlineKeyboardButton(text="ᴛᴇʟᴇɢʀᴀᴍ✉", callback_data="Rito_tele"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="lain lainnya", callback_data="Rito_lainnya"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
-                 ]
-                ]
-            ),
-        ) 
-    elif query.data == "Rito_games":
-        query.message.edit_text(
-            text=f"{text_games}",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="ᴍʟ", callback_data="Rito_ml"),
-                     InlineKeyboardButton(text="ꜰʀᴇᴇ ꜰɪʀᴇ", callback_data="Rito_ff"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="ᴅᴏᴍɪɴᴏ", callback_data="Rito_domino"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_store"),
-                 ]
-                ]
-            ),
-         )
-    elif query.data == "Rito_ml":
-        query.message.edit_text(
-            text=f"{text_ml}",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="ᴘᴀʏᴍᴇɴᴛ💸", callback_data="Rito_payment"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
-                 ]
-                ]
-             ),
-         )
-    elif query.data == "Rito_ff":
-        query.message.edit_text(
-            text=f"{text_ff}",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="ᴘᴀʏᴍᴇɴᴛ💸", callback_data="Rito_payment"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
-                 ]
-                ]
-              ),
-            )
-    elif query.data == "Rito_domino":
-        query.message.edit_text(
-            text=f"{text_domino}",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
-                 ]
-                ]
-             ),
-          )
-    elif query.data == "Rito_tele":
-        query.message.edit_text(
-            text=f"{text_tele}",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_store"),
-                 ]
-                ]
-             ),
-         )
-    elif query.data == "Rito_lainnya":
-        query.message.edit_text(
-            text=f"{text_lainnya}",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_store"),
-                 ]
-                ]
-             ),
-          )
-    elif query.data == "Rito_payment":
-        query.message.edit_text(
-            text=f"{text_payment}",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=False,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
-                 ],
-                 [
-                     InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_games"),
-                 ]
-                ]
-             ),
-          )
 
 
 @run_async
