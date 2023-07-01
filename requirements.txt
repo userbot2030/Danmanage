@@ -27,7 +27,6 @@ pillow==9.4.0
 pretty_errors==1.2.25
 psutil==5.9.4
 psycopg2-binary==2.9.5
-pydictionary==2.0.1
 pykeyboard==0.1.5
 pynewtonmath==1.0.1
 pyrate-limiter==2.10.0
