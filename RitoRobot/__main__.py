@@ -94,7 +94,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url="t.me/DzMusicRobot?startgroup=true"),
+        InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="Rito_support"),
@@ -451,7 +451,7 @@ def Rito_about_callback(update, context):
                     InlineKeyboardButton(text="Panduan Pro💆🏻‍♂", callback_data="Rito_pro"),
                  ],
                  [
-                    InlineKeyboardButton(text="➕ Panduan Lengkap ➕", url="http://t.me/DzMusicRobot?start=help"),
+                    InlineKeyboardButton(text="➕ Panduan Lengkap ➕", url=f"http://t.me/{BOT_USERNAME}?start=help"),
                  ],
                  [
                     InlineKeyboardButton(text="🔙 Kembali", callback_data="Rito_back"),
