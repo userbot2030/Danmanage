@@ -1,17 +1,17 @@
-
+from RitoRobot import pbot
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 
 CHANNEL = "DezetStore"
 
-@Client.on_message(filters.incoming & filters.private, group=-1)
-async def join_channel(bot: Client, msg: Message):
+@pbot.on_message(filters.incoming & filters.private, group=-1)
+async def join_channel(pbot: Client, msg: Message):
     if not CHANNEL:  
         return
     try:
         try:
-            await bot.get_chat_member(CHANNEL, msg.from_user.id)
+            await pbot.get_chat_member(CHANNEL, msg.from_user.id)
         except UserNotParticipant:
             if CHANNEL.isalpha():
                 link = "https://t.me/" + CHANNEL
