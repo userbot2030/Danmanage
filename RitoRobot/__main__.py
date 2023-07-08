@@ -104,8 +104,8 @@ buttons = [
         InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data="Rito_jasa"),
     ],
     [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/MSPR0JECT"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/envSample"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/DezetStore"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/DezetSupport"),
     ],
 ]
 
@@ -516,10 +516,10 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDZULQRNN"),
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDQQ"),
                  ],
                  [
-                     InlineKeyboardButton(text="🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT/426"),
+                     InlineKeyboardButton(text="Dezet Store", url="https://t.me/DezetStore"),
                  ],
                  [
                      InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
