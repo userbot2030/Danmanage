@@ -500,8 +500,8 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ϙʀɪs", url=f"{DONATE_LINK}"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="ϙʀɪs", url=f"https://t.me/DezetSupport"),
+                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/DezetStore"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="Rito_back"),
@@ -516,7 +516,7 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDQQ"),
+                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDQQQ"),
                  ],
                  [
                      InlineKeyboardButton(text="Dezet Store", url="https://t.me/DezetStore"),
