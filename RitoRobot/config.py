@@ -25,7 +25,7 @@ class Config(object):
     #TAMBAHAN
     DATABASE_URL = "postgres://bqlkbhhl:YG-iSQ5u5g-6l2MJ-NRgEi-yPJnq3S-H@rajje.db.elephantsql.com/bqlkbhhl"
     MONGO_DB_URI = "mongodb+srv://avel:tmp0@aveltmp.nqyqy6h.mongodb.net/aveltmp?retryWrites=true&w=majority"
-    ARQ_API_KEY = "UHZKNH-IRFVEV-ANNQWQ-XMZKFE-ARQ"
+    ARQ_API_KEY = "WMFOGU-ONOVQJ-QOZVEQ-UHVFBD-ARQ"
     ARQ_API_URL = "http://arq.hamker.dev"
     
     # Optional fields
