@@ -56,5 +56,4 @@ google-trans-new
 pykeyboard
 pynewtonmath
 httpx
-dns-python
 httpcore
