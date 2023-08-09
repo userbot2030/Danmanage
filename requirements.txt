@@ -55,3 +55,4 @@ googletrans
 google-trans-new
 pykeyboard
 pynewtonmath
+httpx
