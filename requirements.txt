@@ -1,5 +1,5 @@
 aiofiles
-aiohttp
+aiohttp==2.5.2
 apscheduler==3.10.1
 asyncio==3.4.3
 beautifulsoup4==4.12.0
