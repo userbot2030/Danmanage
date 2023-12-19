@@ -530,10 +530,14 @@ def Rito_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍", url="https://t.me/MSDQQQ"),
+                     InlineKeyboardButton(text="ᴅʜɪʟ ᴧꝛᴧʙ", url="https://t.me/bukan_agamis"),
+                     InlineKeyboardButton(text="ᴜʙɪ ᴧꝛᴧʙ", url="https://t.me/bukan_agamis"),
                  ],
                  [
-                     InlineKeyboardButton(text="Dezet Store", url="https://t.me/DezetStore"),
+                    InlineKeyboardButton(text="ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ", callback_data="Rito_notes"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="sɪ ᴧꝛᴧʙ sᴛᴏꝛᴇ", url="https://t.me/Arabc0de"),
                  ],
                  [
                      InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back"),
