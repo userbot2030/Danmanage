@@ -356,15 +356,17 @@ def Rito_about_callback(update, context):
     query = update.callback_query
     if query.data == "Rito_":
         query.message.edit_text(
-            text="♬ ʙᴀɴᴛᴜᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜꜱɪᴄ."
-            "\nᴘɪʟɪʜ ᴍᴇɴᴜ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴀɴᴛᴜᴀɴ ᴍᴜꜱɪᴄ. ",
+            text="Dibawah ini beberapa jasa bot dan jajanan telegram dari [SI ARAB STORE](https://t.me/Arabc0de)."
+            "\nSilahkan Klik Button Di Bawah. ",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ", callback_data="Rito_admin"),
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ", callback_data="Rito_notes"),
+                    InlineKeyboardButton("ᴅʜɪʟ sɪ ᴧꝛᴧʙ", user_id=OWNER_ID),
+                 ],
+                 [
+                    InlineKeyboardButton(text="ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ", callback_data="Rito_notes"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴘʟᴀʏ", callback_data="source_"),
@@ -423,17 +425,29 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "Rito_notes":
         query.message.edit_text(
-            text="✮ PERINTAH BOT"
-            "\n\n ➣ /mstats - Dapatkan 10 Trek Global Stats Teratas, 10 Pengguna Bot Teratas, 10 Obrolan Teratas di bot, 10 Teratas Dimainkan dalam obrolan, dll."
-            "\n\n ➣ /msudolist - Periksa Sudo Pengguna Music,"
-            "\n\n ➣ /lyrics [Nama Musik] mencari Lirik untuk Musik tertentu di web."
-            "\n\n ➣ /song [Nama Trek] atau [Tautan YT] - Unduh trek apa pun dari youtube dalam format mp3 atau mp4."
-            "\n\n ➣ /player -  Dapatkan Panel Bermain interaktif."
-            "\n\n ➣ c singkatan dari pemutaran saluran."
-            "\n\n ➣ /queue or /cqueue- Periksa Daftar Antrian Musik",
+            text="✮ Ubot Premium adalah userbot simple yang mmudahkan kalian tanpa harus melewati proses deploy yg rumit & dengan modul yang lebih keren serta full emoji premium jika akun anda premium"
+            "\n\n Untuk List Userbot Premium SI ARAB STORE bisa kalian cek list di bawah ini :"
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⩹", callback_data="Rito_")]]
+               [
+                [
+                    InlineKeyboardButton("ᴅʜɪʟ sɪ ᴧꝛᴧʙ", user_id=OWNER_ID),
+                ],
+                [
+                    InlineKeyboardButton(text="Ubot Spesial II", url="https://t.me/Spesial02Ubot",
+                    ),
+                    InlineKeyboardButton(text="Ubot Spesial III", url="https://t.me/Spesial03Ubot",
+                    ),
+                    InlineKeyboardButton(text="Ubot Spesial IV", url="https://t.me/Spesial04Ubot",
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(text="Ubot Ultra I", url="https://t.me/ArabUltraUbot"),
+                    InlineKeyboardButton(text="Ubot Ultra II", url="https://t.me/Ultra02Ubot"),
+                    InlineKeyboardButton(text="Ubot Ultra III", url="https://t.me/Ultra03Ubot"),
+                ],
+                [InlineKeyboardButton(text="⩹", callback_data="Rito_")]
+               ]
             ),
         )
     elif query.data == "Rito_support":
