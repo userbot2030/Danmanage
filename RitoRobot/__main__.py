@@ -79,33 +79,33 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **ʜᴀʟᴏ {}
 
-{} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ
-ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ
+{} ɢᴀ ᴀᴅᴀ ʏᴀɴɢ sᴘᴇsɪᴀʟ sᴀᴍᴀ ᴀᴊᴀ ᴋᴇᴋ ʙᴏᴛ ᴍᴜsɪᴄ ʟᴀᴇɴ
+ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ
 ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ➥ ᴜᴘᴛɪᴍᴇ » {}
 ➥ ᴜsᴇʀs   » {}
 ➥ ɢʀᴏᴜᴘs » {}
 ━━━━━━━━━━━━━━━━━━━━━━━━
-ᴋʟɪᴋ ʙᴜᴛᴛᴏɴ ᴍᴀɴᴀɢᴇ ᴜɴᴛᴜᴋ ᴘᴇɴɢᴀᴛᴜʀᴀɴ
-ᴍᴀɴᴀɢᴇ ᴅᴀɴ ᴋʟɪᴋ ʙᴜᴛᴛᴏɴ ᴍᴜsɪᴄ ᴜɴᴛᴜᴋ
-ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴍᴜsɪᴄ ⚠️**
+ᴅᴇᴠ: @Dhilnihnge
+
+ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️**
 """
 
 buttons = [
     [
+        InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ 📩", callback_data="Rito_admin"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs ⁉️", callback_data="help"),
+        InlineKeyboardButton(text="ᴊᴀᴊᴀɴᴀɴ ᴛᴇʟᴇ 💈", callback_data="Rito_"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴅᴇᴠ 👑", url="https://t.me/Dhilnihnge"),
+        InlineKeyboardButton(text="ᴅᴏɴᴀꜱɪ💰", callback_data="Rito_own"),
+    ],
+    [
         InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="Rito_support"),
-        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Rito_"),
-    ],
-    [
-        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data="Rito_jasa"),
-    ],
-    [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/DezetStore"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/DezetSupport"),
     ],
 ]
 
@@ -369,8 +369,7 @@ def Rito_about_callback(update, context):
                     InlineKeyboardButton(text="ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ", callback_data="Rito_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴘʟᴀʏ", callback_data="source_"),
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="Rito_credit"),
+                    InlineKeyboardButton(text="ᴘᴇʀᴀʙᴏᴛᴀɴ ᴛᴇʟᴇ", callback_data="Rito_jasa"),
                  ],
                  [
                     InlineKeyboardButton(text="«", callback_data="Rito_back"),
@@ -396,28 +395,7 @@ def Rito_about_callback(update, context):
 
     elif query.data == "Rito_admin":
         query.message.edit_text(
-            text=f"*✮ PERINTAH ADMIN."
-            "\n\nc singkatan dari pemutaran Channel."
-            "\n ➣ /pause or /cpause - Jeda musik yang diputar."
-            "\n ➣ /resume or /cresume- Lanjutkan musik yang dijeda."
-            "\n ➣ /mute or /cmute- Matikan musik yang diputar."
-            "\n ➣ /unmute or /cunmute- Suarakan musik yang dibisukan."
-            "\n ➣ /skip or /cskip- Lewati musik yang sedang diputar."
-            "\n ➣ /musicstop or /cstop- Hentikan pemutaran musik."
-            "\n ➣ /shuffle or /cshuffle- Secara acak mengacak daftar putar yang antri."
-            "\n ➣ /seek or /cseek - Teruskan Cari musik sesuai durasi Anda."
-            "\n ➣ /seekback or /cseekback - Mundur Carilah musik sesuai durasi Anda."
-            "\n\n༊Lewati."
-            "\n ➣ /skip or /cskip contoh 3 ."
-            "\n ➣ Melewati musik ke nomor antrian yang ditentukan. Contoh: /skip 3 akan melewatkan musik ke musik antrian ketiga dan akan mengabaikan musik 1 dan 2 dalam antrian."
-            "\n\n༊Loop."
-            "\n ➣ /loop or /cloop [enable/disable] atau [Angka antara 1-10] ."
-            "\n ➣ Saat diaktifkan, bot memutar musik yang sedang diputar menjadi 1-10 kali pada obrolan suara. Default ke 10 kali."
-            "\n\n༊Pengguna Auth."
-            "\nPengguna Auth dapat menggunakan perintah admin tanpa hak admin di Group Anda."
-            "\n ➣ /auth [Username] - Tambahkan pengguna ke AUTH LIST dari grup."
-            "\n ➣ /unauth [Username] - Hapus pengguna dari AUTH LIST grup."
-            "\n ➣ /authusers - Periksa DAFTAR AUTH grup",
+            text=f"*✮ Kalo Kalean Mau Ngambil String Pyrogram, Pyrogram v2, atau Telethon kalian klik aja /genstring bree",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="⩹", callback_data="Rito_")]]
@@ -509,13 +487,13 @@ def Rito_about_callback(update, context):
     elif query.data == "Rito_own":
         query.message.edit_text(
             text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Saya."
-            "\n\n Bisa melalui Qris atau Contact",
+            "\n\n Bisa melalui Dana atau Contact Owner Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ϙʀɪs", url=f"https://t.me/DezetSupport"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/DezetStore"),
+                    InlineKeyboardButton(text="ᴅᴀɴᴀ", url=f"https://link.dana.id/qr/3akqs26o"),
+                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Dhilnihnge"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="Rito_back"),
@@ -548,11 +526,14 @@ def Rito_about_callback(update, context):
         
     elif query.data == "Rito_donasi":
         query.message.edit_text(
-            text="ᴅᴏɴᴀꜱɪ ᴅᴇɴɢᴀɴ ꜱᴄᴀɴ Qʀɪꜱ ᴅɪʙᴀᴡᴀʜ [🔥](https://telegra.ph/file/bdf23d4e78c8337249c26.png)"
+            text="ᴅᴏɴᴀꜱɪ ᴅᴇɴɢᴀɴ ᴅᴀɴᴀ ᴅɪʙᴀᴡᴀʜ [🔥](https://telegra.ph//file/bacbad77ddf7d1b409dae.jpg)"
             "\n\n𝙏𝙚𝙧𝙞𝙢𝙖𝙠𝙖𝙨𝙞𝙝 𝙮𝙖𝙣𝙜 𝙨𝙪𝙙𝙖𝙝 𝙗𝙚𝙧𝙙𝙤𝙣𝙖𝙨𝙞🙏",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back")]]),)
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton(text="ᴅᴀɴᴀ", url=f"https://link.dana.id/qr/3akqs26o"),],
+                [InlineKeyboardButton(text="⩹ ᴋᴇᴍʙᴀʟɪ", callback_data="Rito_back")]
+            ]),)
     elif query.data == "Rito_dasar":
         query.message.edit_text(
             text=DASAR,
