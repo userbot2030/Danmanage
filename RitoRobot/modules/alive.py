@@ -19,10 +19,10 @@ async def awake(_, message: Message):
     BUTTON = [
         [
             InlineKeyboardButton("ʜᴇʟᴘ", url=f"https://t.me/{BOT_USERNAME}?start=help"),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ritolog"),
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/SiArab_Support"),
         ],
         [
-            InlineKeyboardButton("ᴍʏ ᴏᴡɴᴇʀ", url=f"t.me/kiritonibos"),
+            InlineKeyboardButton("ᴍʏ ᴏᴡɴᴇʀ", url=f"t.me/Dhilnihnge"),
         ]
     ]
     await message.reply_photo(
