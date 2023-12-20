@@ -1,14 +1,12 @@
 import asyncio
 import sys
-from motor import motor_asyncio
+from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 from RitoRobot import MONGO_DB_URI
 
 
-from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 
-from FallenRobot import MONGO_DB_URI
 
 mongo = MongoCli(MONGO_DB_URI)
 db = mongo.RitoRobot
