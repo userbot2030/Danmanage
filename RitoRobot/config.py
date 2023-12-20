@@ -21,7 +21,9 @@ class Config(object):
     TIME_API_KEY = "ZMOE8Q6BE25J7BEU"  # Get this value from https://timezonedb.com/api
 
     OWNER_ID = 1948147616  # User id of your telegram account (Must be integer)
-
+    
+    MUST_JOIN = "SiArab_Support"
+    
     #TAMBAHAN
     DATABASE_URL = "postgres://bqlkbhhl:YG-iSQ5u5g-6l2MJ-NRgEi-yPJnq3S-H@rajje.db.elephantsql.com/bqlkbhhl"
     MONGO_DB_URI = "mongodb+srv://doadmin:9r260Iqy437zS1lA@db-mongodb-sgp1-52558-1312a8db.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-sgp1-52558"
