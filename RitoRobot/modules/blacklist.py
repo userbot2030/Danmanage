@@ -90,7 +90,6 @@ def add_blacklist(update, context):
             chat_name = chat.title
  
     if len(words) > 1:
-	text = reply_msg.text
         text = words[1]
         to_blacklist = list(
             {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
