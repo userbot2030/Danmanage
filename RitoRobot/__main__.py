@@ -403,8 +403,8 @@ def Rito_about_callback(update, context):
         )
     elif query.data == "Rito_notes":
         query.message.edit_text(
-            text="✮ Ubot Premium adalah userbot simple yang mmudahkan kalian tanpa harus melewati proses deploy yg rumit & dengan modul yang lebih keren serta full emoji premium jika akun anda premium",
-            "\n\n Untuk List Userbot Premium SI ARAB STORE bisa kalian cek list di bawah ini :"
+            text="✮ Ubot Premium adalah userbot simple yang mmudahkan kalian tanpa harus melewati proses deploy yg rumit & dengan modul yang lebih keren serta full emoji premium jika akun anda premium"
+            "\n\n Untuk List Userbot Premium SI ARAB STORE bisa kalian cek list di bawah ini :",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                [
