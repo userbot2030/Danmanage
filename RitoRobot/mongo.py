@@ -6,15 +6,38 @@ from pymongo.errors import ServerSelectionTimeoutError
 from RitoRobot import MONGO_DB_URI
 
 
-MONGO_DB_URI = "doadmin"
+from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
+
+from FallenRobot import MONGO_DB_URI
+
+mongo = MongoCli(MONGO_DB_URI)
+db = mongo.RitoRobot
+
+coupledb = db.couple
 
 
-client = MongoClient()
-client = MongoClient(MONGO_DB_URI, 27017)[MONGO_DB_URI]
-motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URI, 27017)
-db = motor[MONGO_DB_URI]
-db = client["doadmin"]
-try:
-    asyncio.get_event_loop().run_until_complete(motor.server_info())
-except ServerSelectionTimeoutError:
-    sys.exit(log.critical("Can't connect to mongodb! Exiting..."))
+async def _get_lovers(chat_id: int):
+    lovers = await coupledb.find_one({"chat_id": chat_id})
+    if lovers:
+        lovers = lovers["couple"]
+    else:
+        lovers = {}
+    return lovers
+
+
+async def get_couple(chat_id: int, date: str):
+    lovers = await _get_lovers(chat_id)
+    if date in lovers:
+        return lovers[date]
+    else:
+        return False
+
+
+async def save_couple(chat_id: int, date: str, couple: dict):
+    lovers = await _get_lovers(chat_id)
+    lovers[date] = couple
+    await coupledb.update_one(
+        {"chat_id": chat_id},
+        {"$set": {"couple": lovers}},
+        upsert=True,
+    )
