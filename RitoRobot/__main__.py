@@ -45,8 +45,8 @@ from RitoRobot import (
 from RitoRobot.modules import ALL_MODULES
 from RitoRobot.modules.helper_funcs.chat_status import is_user_admin
 from RitoRobot.modules.helper_funcs.misc import paginate_modules
-# from MsRobot.dzstore import text_dzstore, text_games, text_ml, text_ff, text_domino, text_tele, text_lainnya
-# from MsRobot.payment import text_payment
+from MsRobot.dzstore import text_dzstore, text_games, text_ml, text_ff, text_domino, text_tele, text_lainnya
+from MsRobot.payment import text_payment
 from MsRobot.manage import DASAR, LANJUT, AHLI, PRO
 from MsRobot.jasa import JASA
 
@@ -87,18 +87,18 @@ PM_START_TEXT = """
 ➥ ᴜsᴇʀs   » {}
 ➥ ɢʀᴏᴜᴘs » {}
 ━━━━━━━━━━━━━━━━━━━━━━━━
-ᴅᴇᴠ: @Dhilnihnge
+ᴅᴇᴠ: @mhmdwldnnnn 
 
 ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️**
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ 📩", callback_data="Rito_admin"),
+        InlineKeyboardButton(text="ᴊᴀᴊᴀɴᴀɴ ᴛᴇʟᴇ 📩", callback_data="Rito_admin"),
     ],
     [
         InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs ⁉️", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴊᴀᴊᴀɴᴀɴ ᴛᴇʟᴇ 💈", callback_data="Rito_"),
+        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇᴍᴇɴᴛ 💈", callback_data="Rito_"),
     ],
     [
         InlineKeyboardButton(text="ᴅᴇᴠ 👑", url="https://t.me/Dhilnihnge"),
